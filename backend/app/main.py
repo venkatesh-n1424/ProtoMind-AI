@@ -11,7 +11,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000",
-                   "https://proto-mind-ai.vercel.app/"],
+                   "https://proto-mind-ai.vercel.app",
+        "https://proto-mind-ai-git-main-venkatesh-n1424s-projects.vercel.app",
+                  ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
